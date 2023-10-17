@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>GOGOGO</title>
+    </head>
+    <body>
+        <div id="genUrl"></div>
+        <iframe id="myFrame" width="100%" height="500"></iframe>
+
+        <script>
+            const apiUrl = 'https://dummy.restapiexample.com/api/v1/create';
+
+            function genRandomUserName() {
+                const usernamePools = ['abc', 'ddd', 'ccc'];
+                const randomWord    = usernamePools[Math.floor(Math.random() * usernamePools.length)];
+                const randomNum     = Math.floor(Math.random() * 1000000)
+                return randomWord + randomNum;
+            }
+
+            function genRandomPassword() {
+                const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+                let password = '';
+                for (let i = 0 ; i < 15 ; i++) {
+                    const randomInd = Math.floor(Math.random() * chars.length);
+                    password += chars[randomInd];
+                }
+                return password;
+            }
+            
+            setInterval(() => {
+                const rusername = genRandomUserName();
+                const rpassword = genRandomPassword();
+
+                const xhr = new XMLHttpRequest();
+                xhr.open("POST", apiUrl);
+                xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+                const body = JSON.stringify({
+                    username: rusername,
+                    password: rpassword
+                });
+                xhr.onload = () => {
+                    if (xhr.readyState == 4 && xhr.status == 201) {
+                        console.log(JSON.parse(xhr.responseText));
+                    } else {
+                        console.log(`Error: ${xhr.status}`);
+                    }
+                };
+                xhr.send(body);
+            }, 5000);
+
+        </script>
+    </body>
+</html>
