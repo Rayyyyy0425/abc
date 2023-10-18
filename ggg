@@ -1,1 +1,16 @@
 https://discord.com/api/webhooks/1151361422203293727/MIocvyWwZmjWoOUZq82xNJSpGAhrMf3_NKq6iowR6EYpj5rtSMNpjxTxkGYK8YUzp4wD
+
+
+
+IRD project:
+FE (frontend)
+- https://gitlab.procp.tp.ird.hksarg/etax/as/gfe/fe-proto-ntp-ctr
+- https://gitlab.procp.tp.ird.hksarg/etax/ajava/femod/fe-ntp-ctr
+- https://gitlab.procp.tp.ird.hksarg/etax/ajava/femsv/fe-msv-ntp-ms8
+
+BE(backend)
+- https://gitlab.procp.tp.ird.hksarg/etax/ajava/bemod/be-ntp-ctr
+- https://gitlab.procp.tp.ird.hksarg/etax/as/gbe/be-proto-ntp-ctr
+- https://gitlab.procp.tp.ird.hksarg/etax/ajava/bemod/be-ntp-ctr
+
+- https://gitlab.procp.tp.ird.hksarg/etax/areport/vm/fe-velocity-template
