@@ -4,3 +4,8 @@
 4444
 
 =IF(AND(C2="Done",L2<>"Done"),"要食","")
+
+
+https://eoms.epr.reo.gov.hk/training/login
+23DCIT0649
+Y562y562
