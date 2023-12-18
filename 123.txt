@@ -1,0 +1,12 @@
+https://webbi8.altamm.com.hk/game/ge/ams/apoint_action.php
+
+check_uname: raylee02
+ac_uname: raylee02
+account_type: AMS
+ac_uname2: raylee02
+card_sn: AT23120400000389
+keycode1: N36HS
+keycode2: 7TATD
+keycode3: 5TCG4
+keycode4: TJWX2
+vvcode: 334EF
